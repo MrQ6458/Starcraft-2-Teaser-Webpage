@@ -1,0 +1,359 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+html { 
+	background: url("http://img3.cache.netease.com/photo/0031/2012-06-03/833816IE2IIQ0031.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+a {
+	text-decoration: none;
+}
+
+#navbar {
+	width: 100%;
+	height: 80px;
+	background-color: #636363;
+	display: flex;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+}
+
+#newpost {
+	width: 100%;
+	height: 1300px;
+	background-image: url("Nova.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	margin-top: 80px;
+}
+
+#mainboard {
+	width: 100%;
+	height: 800px;
+	background-image: url("contenttop.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	margin-top: -13%;
+}
+
+#navlist {
+	list-style-type:none;
+    margin-top: 30px;
+    padding: 0;
+	color: #AFFFFD;
+}
+
+#dropdown ul{
+	position: absolute;
+	list-style-type:none;
+	width:200px;
+	margin-left: -50px;
+	display: none;
+}
+
+#dropdown ul li{
+	background-color: #00777E;
+	font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
+	color: #DCDCDC;
+}
+
+iframe {
+	float:left;
+	margin-left: 15%;
+	margin-top: 40px;
+	z-index: 2;
+}
+
+#mainboardbutton1 {
+	display: flex;
+	background-color: orange;
+	height: 40px;
+	width: 400px;
+	margin-left: -20%;
+	margin-top: 65px;
+	z-index: 1;
+}
+
+#mainboardbutton1 h4{
+	font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
+	margin-top: 10px;
+	padding-left: 5px;
+}
+
+#mainboardbutton2 {
+	display: flex;
+	background-color: orange;
+	height: 40px;
+	width: 400px;
+	margin-left: 45%;
+	margin-top: 65px;
+	z-index: 1;
+}
+
+#mainboard img {
+	display: flex;
+	float:right;
+	margin-top:20px;
+	margin-left: -20%;
+	z-index: 2;
+}
+
+#mainboardbutton2 h4{
+	font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
+	margin-top: 10px;
+	padding-left: 320px;
+}
+
+#newpost h1 {
+	display:flex;
+	font-family: Arial, sans-serif;
+	margin-top: 200px;
+	margin-left: 60%;
+    font-weight: 300;
+	text-shadow: 0 0 5px rgba(0, 13, 32, 0.75);
+	font-size: 70px;
+	color: black;
+}
+
+#newpost h2 {
+	display: flex;
+	font-family: Arial, sans-serif;
+	margin-top: 450px;
+	margin-left: -15%;
+    font-weight: 150;
+	color: #644C4C;
+	text-shadow: 0 0 5px #FE8888;
+	font-size: 25px;
+}
+
+#newpost h3 {
+	display: flex;
+	font-family: Arial, sans-serif;
+	margin-top: 500px;
+	margin-left: -16%;
+	color: #CF3131;
+	font-size: 15px;
+}
+
+#navbarlogo {
+	background-image: url("http://brothersofwar.org/community/uploads/d451743c984d9a19e8f770f57add4848.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 160px;
+	height: 80px;
+	padding: 0;
+}
+
+#searchheader {
+	position: relative;
+	margin-top: -35px;
+	margin-left: 1500px;
+}
+
+#textinput {
+	width: 150px;
+    height: 20px;
+	border: none;
+    font-family: "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+	padding-left: 3px;
+}
+
+#heroboardlabel {
+	width: 100%;
+	height: 800px;
+	background-image: url("herobackground.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	margin-top: -200px;
+}
+
+#heroboardlabel h5 {
+	font-family: impact, sans-serif;
+	font-style: italic;
+	font-size: 50px;
+	margin-left: 40%;
+	margin-top: 100px;
+	text-shadow: 0 4px 5px #8B8E82;
+}
+
+#heroboardlabel p {
+	font-family: impact, sans-serif;
+	font-size: 19px;
+	color: #004A49;
+	margin-left: -28%;
+	margin-top: 170px;
+	text-shadow: 0 2px 2px #00FFFC;
+}
+
+.heroname:hover {
+	color: #FC8814;
+	text-shadow: 0 2px 2px #FF955C;
+}
+
+#heroboard {
+	width: 380px;
+	margin-left: 15%;
+	margin-top: -450px;
+}
+
+.inlineblockhero {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.heroname {
+	font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
+	text-shadow: 0 2px 2px #9C5CFF;
+}
+
+.navmenu {
+	display: inline-block;
+	position:relative;
+	margin-left: 40px;
+	font-family: Hoefler Text,Baskerville Old Face,Garamond,Times New Roman,serif; 
+
+}
+
+.navmenu a {
+	color: #AFFFFD;
+}
+
+.flyoutcategory div {
+	background-color: #8B79FF;
+	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+	color: black;
+}
+
+.empty {
+	width: 400px;
+	height: 400px;
+	display: flex;
+	margin-left: 800px;
+	margin-top: -200px;
+}
+
+.Raynor {
+	width: 400px;
+	height: 400px;
+	background-image: url("http://us.battle.net/sc2/static/images/coop/commanders/commander-raynor-character.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	margin-left: 800px;
+	margin-top: -200px;
+}
+
+.Kerrigan {
+	width: 400px;
+	height: 400px;
+	background-image: url("http://us.battle.net/sc2/static/images/coop/commanders/commander-kerrigan-character.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	margin-left: 800px;
+	margin-top: -200px;
+}
+
+.Artanis {
+	width: 400px;
+	height: 400px;
+	background-image: url("http://us.battle.net/sc2/static/images/coop/commanders/commander-artanis-character.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	margin-left: 800px;
+	margin-top: -200px;
+}
+
+.Swann {
+	width: 400px;
+	height: 400px;
+	background-image: url("http://us.battle.net/sc2/static/images/coop/commanders/commander-swann-character.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	margin-left: 800px;
+	margin-top: -200px;
+}
+
+.Karax {
+	width: 400px;
+	height: 400px;
+	background-image: url("http://us.battle.net/sc2/static/images/coop/commanders/commander-karax-character.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	margin-left: 800px;
+	margin-top: -200px;
+}
+
+.Vorazun {
+	width: 400px;
+	height: 400px;
+	background-image: url("http://us.battle.net/sc2/static/images/coop/commanders/commander-vorazun-character.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	margin-left: 800px;
+	margin-top: -200px;
+}
+
+.Zagara {
+	width: 400px;
+	height: 400px;
+	background-image: url("http://us.battle.net/sc2/static/images/coop/commanders/commander-zagara-character.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	margin-left: 800px;
+	margin-top: -200px;
+}
+
+.Abathur {
+	width: 400px;
+	height: 400px;
+	background-image: url("http://us.battle.net/sc2/static/images/coop/commanders/commander-abathur-character.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	margin-left: 800px;
+	margin-top: -200px;
+}
+
+.Nova {
+	width: 400px;
+	height: 400px;
+	background-image: url("http://us.battle.net/sc2/static/images/coop/commanders/commander-nova-character.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	margin-left: 800px;
+	margin-top: -200px;
+}
+
+.Alarak {
+	width: 400px;
+	height: 400px;
+	background-image: url("http://us.battle.net/sc2/static/images/coop/commanders/commander-alarak-character.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	margin-left: 800px;
+	margin-top: -200px;
+}
+
+
+

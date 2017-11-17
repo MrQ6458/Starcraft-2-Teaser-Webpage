@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+	</head>
+	<body>
+		<script>
+			window.onload = function() {
+				
+				var gaben = document.getElementById("gaben");
+				TweenLite.to(gaben, 7, {opacity:1, delay:3});
+				TweenLite.to(gaben, 5, {opacity:0,delay:8});
+				
+				var one = document.getElementById("one");
+				TweenLite.to(one, 2, {opacity:1, scale:2, delay:5});
+				TweenLite.to(one, 2, {opacity:0, delay:8});
+				
+				var steam = document.getElementById("steam");
+				TweenLite.to(steam, 7, {opacity:1, delay:8});
+				TweenLite.to(steam, 5, {opacity:0, delay:13});
+				
+				var two = document.getElementById("two");
+				TweenLite.to(two, 2, {opacity:1, scale:2, delay:10});
+				TweenLite.to(two, 2, {opacity:0, delay:13});
+				
+				var game1 = document.getElementById("game1");
+				TweenLite.to(game1, 7, {opacity:1, left:"-=300px", delay:13});
+				TweenLite.to(game1, 5, {opacity:0, delay:18});
+				
+				var three = document.getElementById("three");
+				TweenLite.to(three, 2, {opacity:1, scale:2, delay:15});
+				TweenLite.to(three, 2, {opacity:0, delay:18});
+				
+				var game2 = document.getElementById("game2");
+				TweenLite.to(game2, 7, {opacity:1, right:"-=300px", delay:18}); 
+				TweenLite.to(game2, 5, {opacity:0, delay:23});
+				
+				var logo = document.getElementById("logo");
+				TweenLite.to(logo, 7, {opacity:1, delay:23});
+				
+				var four = document.getElementById("four");
+				TweenLite.to(four, 7, {opacity:1, scale:3, delay:25});
+					
+			}
+		</script>
+		<style>
+			#steam, #gaben, #logo {
+				position: absolute;
+				height:100%;
+				width: 1927px;
+				opacity: 0;
+				margin-top: -10px;
+				margin-right: -15px;
+				margin-left: -15px;
+			}
+			#game1 {
+				position: absolute;
+				height:100%;
+				width: 2327px;
+				opacity: 0;
+				margin-top: -10px;
+				margin-right: -15px;
+				margin-left: -15px;
+			}
+			#game2 {
+				position: absolute;
+				height:100%;
+				width: 2327px;
+				opacity: 0;
+				margin-top: -10px;
+				margin-right: -15px;
+				margin-left: -15px;
+			}
+			p {
+				z-index: 1;
+				font-size:30px;
+				opacity: 0;
+				position:absolute;
+				margin-top: 300px;
+				margin-left: 750px;
+				color: white;
+				font-family: sans-serif;
+				
+			}
+			body {
+				background-color: black;
+			}
+			#three {
+				margin-left: 550px;
+			}
+			#four {
+				margin-left: 700px;
+			}
+			div {
+				display: none;
+			}
+		</style>
+		<div>
+			<audio controls autoplay>
+				<source src = "Two_Steps_From_Hell_-_Possessed_Gramophone_(Halloween).mp3" type = "audio/mpeg">
+			</audio>
+		</div>
+		<p id = "one">
+			FROM OUR LORD AND SAVIOR
+		</p>
+		<img src = "http://static.gamespot.com/uploads/original/1535/15358581/2397008-1531880985-RJTni.jpg" id = "gaben"/>
+		<p id = "two">
+			LORD GABEN PRESENTS
+		</p>
+		<img src = "http://www.popsci.com/sites/popsci.com/files/import/2013/images/2013/09/valve_1.jpg" id = "steam"/>
+		<p id = "three">
+			THE MOST ANTICIPATED GAME OF THE CENTURY
+		</p>
+		<img src = "http://s3.amazonaws.com/digitaltrends-uploads-prod/2015/03/half-life-2-update.jpg" id = "game1"/>
+		<img src = "http://media.moddb.com/images/mods/1/22/21004/Half_Life.jpg" id = "game2"/>
+		<p id = "four">
+			COMING FEBRUARY 31st, 2016
+		</p>
+		<img src = "http://images.kdramastars.com/data/images/full/126800/half-life-3-logo.jpg" id = "logo"/>
+	</body>
+</html>

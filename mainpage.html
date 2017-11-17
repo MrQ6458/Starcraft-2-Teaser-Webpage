@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to Starcraft 2</title>
+		<link type="text/css" rel="stylesheet" href="mainpage.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	</head>
+	<script>
+		$(document).ready(function() {
+			$('#dropdown').hover(function(){
+				$(this).children('ul').slideDown(200);
+			},function(){
+				$(this).children('ul').slideUp(200);
+			});
+			
+			$('.heroname').hover(function(){
+				var name = $(this).html();
+				$('.empty').addClass(name);
+			},function(){
+				var name = $(this).html();
+				$('.empty').removeClass(name);
+			});
+		});
+		
+		var newsearch = document.getElementById('newsearch');
+		newsearch.addEventListener('submit',function(a){
+			a.preventDefault();
+			var b = document.getElementById('textinput').value;
+			window.location.href = 'http://www.google.com/'+b;
+		});
+		
+		
+	</script>
+	<body>
+		<div id="navbar">
+			<div id="navbarlogo"></div>
+			<div id="navsection">
+				<ul id="navlist">
+					<li id="dropdown" class="navmenu">GAMES
+						<ul>
+							<li class="flyoutcategory"><div><strong>Guides</strong></div></li>
+							<li><a href="http://us.battle.net/sc2/en/game/guide/whats-sc2">Getting Started</a></li>
+							<li><a href="http://us.battle.net/sc2/en/game/strategy-guide/">Multiplayer Tips</a></li>
+							<li class="flyoutcategory"><div><strong>World</strong></div></li>
+							<li><a href="http://us.battle.net/sc2/en/game/unit/">Units</a></li>
+							<li><a href="http://us.battle.net/sc2/en/game/race/">Races</a></li>
+							<li><a href="http://us.battle.net/sc2/en/game/hero/">Heroes</a></li>
+							<li><a href="http://us.battle.net/sc2/en/game/lore/">Story</a></li>
+						</ul>
+					</li>
+					<li class="navmenu"><a href="finalprojecttrailer.html">TRAILER</a></li>
+					<li class="navmenu"><a href="http://us.battle.net/sc2/en/buy-now/">SHOP</a></li>
+					<li class="navmenu"><a href="http://us.battle.net/forums/en/sc2/index">FORUMS</a></li>
+					<li class="navmenu"><a href="http://wcs.battle.net/sc2/en/?utm_source=battle.net&utm_medium=internal&utm_campaign=wcs&utm_content=sc2-nav">ESPORTS</a></li>
+				</ul>
+				<div id="searchheader">
+					<form id="newsearch" method="get" action="http://www.google.com">
+						<input type="text" class="textinput" id="textinput" name="q" size="21" maxlength="120"></input>
+						<input type="submit" value="search" class="tfbutton"></input>
+					</form>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="newpost">
+			<h1>NOVA<br/>COVERT<br/>OPS</h1>
+			<h2>COMPLETE THE TRILOGY</h2>
+			<h3>Available December 32nd</h3>
+		</div>
+		<div id="mainboard">
+			<iframe width="200" height="100" src="https://www.youtube.com/embed/pgsz4VQNjDA" frameborder="0" allowfullscreen></iframe>
+			<div id="mainboardbutton1">
+				<h4>Watch Trailer</h4>
+			</div>
+			<div id="mainboardbutton2">
+				<h4>Buy Now</h4>
+			</div>
+			<img width="100" height="150" src="http://media3.takealot.com/covers/covers/50892198/sc2lotv_se_na_fob_en-zoom.jpg?1438253039" />
+		</div>
+		<div id="heroboardlabel">
+			<h5>The Heroes are here</h5>
+			<p>No matter your playstyle, there is a unique commander for you in the new Co-op mode.</p>
+		</div>
+		<div id="heroboard">
+			<ul id="herolist">
+				<li class="inlineblockhero">
+					<a href="http://us.battle.net/sc2/en/co-op/"><p class="heroname">Raynor</p></a>
+				</li>
+				<li class="inlineblockhero">
+					<a href="http://us.battle.net/sc2/en/co-op/"><p class="heroname">Kerrigan</p></a>
+				</li>
+				<li class="inlineblockhero">
+					<a href="http://us.battle.net/sc2/en/co-op/"><p class="heroname">Artanis</p></a>
+				</li>
+				<li class="inlineblockhero">
+					<a href="http://us.battle.net/sc2/en/co-op/"><p class="heroname">Swann</p></a>
+				</li>
+				<li class="inlineblockhero">
+					<a href="http://us.battle.net/sc2/en/co-op/"><p class="heroname">Zagara</p></a>
+				</li>
+				<li class="inlineblockhero">
+					<a href="http://us.battle.net/sc2/en/co-op/"><p class="heroname">Vorazun</p></a>
+				</li>
+				<li class="inlineblockhero">
+					<a href="http://us.battle.net/sc2/en/co-op/"><p class="heroname">Karax</p></a>
+				</li>
+				<li class="inlineblockhero">
+					<a href="http://us.battle.net/sc2/en/co-op/"><p class="heroname">Abathur</p></a>
+				</li>
+				<li class="inlineblockhero">
+					<a href="http://us.battle.net/sc2/en/co-op/"><p class="heroname">Alarak</p></a>
+				</li>
+				<li class="inlineblockhero">
+					<a href="http://us.battle.net/sc2/en/co-op/"><p class="heroname">Nova</p></a>
+				</li>
+			</ul>
+			<div class="empty"></div>
+			<!-- https://www.google.com/search?safe=strict&espv=2&biw=1920&bih=901&tbm=isch&sa=1&q=raynor+coop+transparent+png&oq=raynor+coop+transparent+png&gs_l=img.3...2424.6932.0.7067.20.14.1.0.0.0.533.2223.2-1j3j1j1.6.0....0...1c.1.64.img..13.0.0.w99H6QLL6W0#imgrc=BSRCsXauKp8apM%3A -->
+		</div>
+	</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Starcraft 2 Nova Trailer</title>
+		<link type="text/css" rel="stylesheet" href="finalprojecttrailer.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	</head>
+	<script>
+		window.onload = function(){
+			var frame1 = document.getElementById("firstframe");
+			TweenLite.to(frame1, 7, {opacity:1, delay:1});
+			TweenLite.to(frame1, 5, {opacity:0,delay:6});
+			
+			var one = document.getElementById("one");
+			TweenLite.to(one, 2, {opacity:1, scale:2, delay:3});
+			TweenLite.to(one, 2, {opacity:0, delay:6});
+			
+			var	frame2 = document.getElementById("secondframe");
+			TweenLite.to(frame2, 7, {opacity:1, delay:6});
+			TweenLite.to(frame2, 5, {opacity:0,delay:11});
+			
+			var two = document.getElementById("two");
+			TweenLite.to(two, 2, {opacity:1, scale:2, color:"#77FF88", delay:8});
+			TweenLite.to(two, 2, {opacity:0, delay:11});
+			
+			var	frame3 = document.getElementById("thirdframe");
+			TweenLite.to(frame3, 7, {opacity:1, delay:11});
+			TweenLite.to(frame3, 5, {opacity:0,delay:16});
+			
+			var three = document.getElementById("three");
+			TweenLite.to(three, 2, {opacity: 1, scale: 2, left: "500px", ease:Bounce.easeOut, delay:13});
+			TweenLite.to(three, 2, {opacity: 0, delay:16});
+			
+			var	frame4 = document.getElementById("fourthframe");
+			TweenLite.to(frame4, 7, {opacity:1, delay:16});
+			TweenLite.to(frame4, 5, {opacity:0,delay:21});
+			
+			var four = document.getElementById("four");
+			TweenLite.to(four, 2, {opacity: 1, scale: 2, color: "blue", delay:18});
+			TweenLite.to(four, 2, {opacity:0, delay:21});
+			
+			var	frame5 = document.getElementById("fifthframe");
+			TweenLite.to(frame5, 7, {opacity:1, delay:21});
+			TweenLite.to(frame5, 5, {opacity:0,delay:26});
+			
+			var five = document.getElementById("five");
+			TweenLite.to(five, 3, {opacity: 1, scale: 2, top: "300px", ease:Elastic.easeInOut, delay:23});
+			TweenLite.to(five, 1, {opacity:0, delay:26});
+			
+			var	frame6 = document.getElementById("sixthframe");
+			TweenLite.to(frame6, 7, {opacity:1, delay:26});
+			TweenLite.to(frame6, 5, {opacity:0,delay:31});
+			
+			var six = document.getElementById("six");
+			var span = document.getElementById("span");
+			TweenLite.to(six, 4, {opacity: 1, scale: 2, left: "200px", ease:Power4.easeInOut, delay:28});
+			TweenLite.to(span, 4, {opacity: 1, scale: 2, left: "200px", ease:Power4.easeInOut, color: "red", delay:28});
+			TweenLite.to(six, 1, {opacity:0, delay:31});
+			
+			var	frame7 = document.getElementById("seventhframe");
+			TweenLite.to(frame7, 7, {opacity:1, delay:31});
+			TweenLite.to(frame7, 5, {opacity:0,delay:38});
+			
+			var seven = document.getElementById("seven");
+			TweenLite.to(seven, 2, {opacity:1, scale:2, delay:33});
+			TweenLite.to(seven, 2, {opacity:0, delay:38});
+			
+			var eight = document.getElementById("eight");
+			TweenLite.to(eight, 2, {opacity:1, scale:2, delay:35});
+			TweenLite.to(eight, 2, {opacity:0, delay:38});
+		}
+	</script>
+	<body>
+		<h1 id="one">The world has been peaceful for quite a long time.</h1>
+		<img id="firstframe" src="https://images8.alphacoders.com/553/553592.jpg" />
+		<h1 id="two">It is so peaceful that it reminds me of the old times.</h1>
+		<img id="secondframe" src="https://images7.alphacoders.com/553/553599.jpg" />
+		<h1 id="three">The wonderful wars.</h1>
+		<img id="thirdframe" src="https://images2.alphacoders.com/134/134560.jpg" />
+		<h1 id="four">Terran, Protoss, Zerg. There shall be no peace between them, but wars.</h1>
+		<img id="fourthframe" src="https://images5.alphacoders.com/432/432100.jpg" />
+		<h1 id="five">Raynor, Artanis and Kerrigan, just watch.</h1>
+		<img id="fifthframe" src="https://images.alphacoders.com/737/737699.jpg" />
+		<h1 id="six">The peace that you created, will soon, turn into <span id="span">ashes</span>.</h1>
+		<img id="sixthframe" src="https://images6.alphacoders.com/703/703195.png" />
+		<h1 id="seven">Nova Secret Ops now on sale</h1>
+		<h1 id="eight">Check out the main page and buy it!!</h1>
+		<img id="seventhframe" src="https://images8.alphacoders.com/400/400734.jpg" />
+	</body>
+</html>
